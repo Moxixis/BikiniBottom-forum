@@ -1,0 +1,28 @@
+微软作为全球著名的游戏厂商，其在游戏制作与开发体验上也积极下功夫。在听取了游戏开发人员的反馈后，Visual Studio 2022 正式集成 Unreal Engine （UE、虚幻引擎）
+
+作者 | David Li       责编 | 梦依丹
+
+出品 | CSDN（ID：CSDNnews）
+
+自 Visual Studio 2022 发布以来，团队开发者人员一直专注于为游戏和大型项目建立更加顺畅的生产力和性能改进。在听取游戏开发人员的反馈后，Visual Studio 团队发文表示， Visual Studio 2022 正式集成 Unreal Engine （UE、虚幻引擎）。目前该功能可以在 Visual Studio 2022 17.5 预览版中体验，自此，开发者无需离开 Visual Studio 即可查看 UE 蓝图和资产、添加默认的 UE 类、扩展宏和重新设计成员列表等。
+
+Visual Studio 2022 17.5 预览版下载地址：https://visualstudio.microsoft.com/vs/preview
+
+微软旗下 Rare 游戏工作室技术总监 Sean Davies 表示：“这是一个值得参与的伟大合作，Rare 游戏团队分享了他们在虚幻引擎发布和编写方面的深厚经验，该套工具可以帮助游戏开发人员快速上手，更好地理解上下文，避免常见错误。”
+
+下面一起来看看如何在 Visual Studio 中使用虚幻引擎。
+1.设置
+
+虚幻引擎当下默认的集成功能有查看蓝图引用、蓝图资产和添加  UE 类，这些功能在默认情况下都可以使用，但需要开发人员切换到虚幻引擎工作时才会显示。为确保这些功能能正常使用，开发人员在安装 Vusual Studio 时，需在"Game development for C++"工作负载中勾选 "IDE support for Unreal Engine "组件，其中扩展宏和重新设计IntelliSense成员列表功能无需上述插件也可使用。
+此外，虚幻引擎开发人员还需要在 UE 市场上安装 “Visual Studio Integration Tool” 插件来查看蓝图引用和资产。如果存在项目与插件不兼容的情况，开发者可通过 GitHub repo 克隆来安装此插件。
+2.显示 UE 蓝图和资产
+
+在安装了工作负载组件和插件后，UE 蓝图参考将开始以 CodeLens 提示的形式出现在虚幻引擎类、函数、属性的顶部。
+
+通过快速浏览，您可以看到蓝图引用了多少与您有关的 UE 类、函数或属性等。点击 Blueprint CodeLens 提示将显示出所有相关的蓝图。对于那些包含资产路径的蓝图，你可以双击该条目，在 Visual Studio 中打开 UE 资产检查器。
+3.添加 UE 引擎类
+
+开发者可以在 Visual Studio 中添加新的虚幻引擎类，在解决方案资源管理器中右击项目文件夹，然后点击添加—>虚幻引擎类来打开新项目添加向导。
+新项目窗口打开后，开发人员可以从4个模板中任选一个。
+除此以外，微软团队还针对广大开发者使用宏的困惑，对 UE 引擎宏进行了扩展，其它功能如重新设计成员列表、改善与提高 C++ 生产体验与性能等。具体详情可访问官方发布说明：https://devblogs.microsoft.com/cppblog/unreal-engine-integrations-now-available-in-visual-studio-2022/
+THE END
